@@ -29,7 +29,7 @@ jobs:
       - name: publish to npm
         run: |
           pnpm run prepack
-          lerna publish from-package --no-verify-access --ignore-scripts -y
+          pnpm run publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
           

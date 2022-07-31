@@ -17,7 +17,8 @@
     "lint": "eslint --ext .ts ./src  --fix && git add .",
     "test": "npm run test:unit && npm run test:integration",
     "test:unit": "jest -c __test__/unit/jest.config.js",
-    "test:integration": "jest -c __test__/integration/jest.config.js --runInBand"
+    "test:integration": "jest -c __test__/integration/jest.config.js --runInBand",
+    "publish": "pnpm publish"
   },
   "repository": {
     "type": "git",

@@ -10,7 +10,8 @@
     "commitlint": "commitlint -E COMMIT_EDITMSG_PATH",
     "husky-commitlint": "commitlint -e",
     "prepare": "husky install",
-    "prepack": "pnpm run -r prepack"
+    "prepack": "pnpm run -r prepack",
+    "publish": "pnpm run -r --parallel publish --no-git-checks"
   },
   "repository": {
     "type": "git",
