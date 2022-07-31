@@ -11,7 +11,11 @@
   "license": "ISC",
   "devDependencies": {
     "@bidoubiwa/vuepress-plugin-element-tabs": "^0.2.9",
-    "vuepress": "^1.8.2"
+    "vuepress": "^1.8.2",
+    "webpack": "^3.0.0 || ^4.0.0"
   },
-  "private": true
+  "private": true,
+  "peerDependencies": {
+    "webpack": "^3.0.0 || ^4.0.0"
+  }
 }

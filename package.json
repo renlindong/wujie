@@ -5,11 +5,12 @@
   "private": true,
   "scripts": {
     "start": "pnpm run -r --parallel start",
-    "doc": "lerna run docs:dev",
-    "test": "lerna run test --scope wujie",
+    "doc": "pnpm run -r docs:dev",
+    "test": "pnpm run --filter wujie test",
     "commitlint": "commitlint -E COMMIT_EDITMSG_PATH",
     "husky-commitlint": "commitlint -e",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prepack": "pnpm run -r prepack"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,6 @@
     "husky": "^7.0.4",
     "lint-staged": "^12.4.1"
   },
+  
   "dependencies": {}
 }
